@@ -1,0 +1,85 @@
+PS C:\Users\oscar\OneDrive\CSUSB\Fall 2022\CSE5720\Project2> python3 project2.py
+Connected to MySQL Server Version:  8.0.31
+You're connected to database:  ('project2',)
+
+
+first query  -- print all entries in project2.publishers table
+(1, 'WILLEY', 'WDT@VSNL.NET', '9112326087')
+(2, 'WROX', 'INFO@WROX.COM', None)
+(3, 'TATA MCGRAW-\nHILL', 'FEEDBACK@TATAMCGRAWHILL.COM', '9133333322')
+(4, 'TECHMEDIA', 'BOOKS@TECHMEDIA.COM', '9133257660')
+
+
+second query -- create table projec2.customers with schema custID,custName,zip,city,state; PK custID
+('authors',)
+('customers',)
+('publishers',)
+('subjects',)
+('titleauthors',)
+('titles',)
+
+
+third query -- inserting values into customers.
+(1, 'STEPHEN WALTHER', '92399', 'Yucaipa', 'California')
+(2, 'JAMES GOODWILL', '92373', 'Redlands', 'California')
+(3, 'CALVIN HARRIS', '92318', 'Loma Linda', 'California')
+(4, 'MARTIN GARRIX', '92501', 'Riverside', 'California')
+(5, 'PAMELA REIF', '92240', 'Palm Springs', 'California')
+
+
+fourth query --  Form  a  query  to  print  the  names  of  those  who  appear  in  both  “author” and  “customer.”
+('JAMES GOODWILL',)
+('STEPHEN WALTHER',)
+
+
+fifth query -- Form a query to find subjects in which the minimum price is $400 and maximum price is $550.
+('ASP.NET',)
+('JAVA ENTEPRISE EDITION',)
+('JAVA LANGUAGE',)
+('VISUAL BASIC.NET',)
+
+
+Sixth Query -  Form a query to change the price of title 1001 to the price of the most recently published book.
+(1001, 'ASP.NET UNLEASHED', 4, 'ASP', datetime.date(2002, 4, 2), 'P', 540)
+(1002, 'ORACLE10G COMP. REF.', 3, 'ORA', datetime.date(2005, 5, 1), 'P', 575)
+(1003, 'MASTERING EJB', 1, 'JEE', datetime.date(2005, 2, 3), 'P', 475)
+(1004, 'JAVA COMP. REF', 3, 'JAVA', datetime.date(2005, 4, 3), 'P', 499)
+(1005, 'PRO. VB.NET', 2, 'VB', datetime.date(2005, 6, 15), 'P', 450)
+
+
+Seventh query: Form a query to find titles published by the publisher whose name contains ‘T’.
+('ORACLE10G COMP. REF.',)
+('JAVA COMP. REF',)
+('ASP.NET UNLEASHED',)
+
+
+QUERY 8: Insert  a  row  into  titleauthors  for  title  ‘java.comp.ref’ and author  'DAVAID HUNTER.'
+(1001, 104, 1)
+(1002, 105, 1)
+(1003, 106, 1)
+(1004, 101, 1)
+(1004, 103, None)
+(1005, 102, 2)
+(1005, 103, 1)
+
+
+9th query: Form  a  query  to  find  author  names  who  have  written  any  title  with  author 'HERBERT SCHILD.'
+('DAVAID HUNTER',)
+
+
+PROJECT 2 BEFORE PRICE ADJUSTMENT:
+(1001, 'ASP.NET UNLEASHED', 4, 'ASP', datetime.date(2002, 4, 2), 'P', 540)
+(1002, 'ORACLE10G COMP. REF.', 3, 'ORA', datetime.date(2005, 5, 1), 'P', 575)
+(1003, 'MASTERING EJB', 1, 'JEE', datetime.date(2005, 2, 3), 'P', 475)
+(1004, 'JAVA COMP. REF', 3, 'JAVA', datetime.date(2005, 4, 3), 'P', 499)
+(1005, 'PRO. VB.NET', 2, 'VB', datetime.date(2005, 6, 15), 'P', 450)
+
+
+Form a query to decrease the price of all the books published before 2004 by 30 and decrease the price of all the books published after 2004 by 15%.
+(1001, 'ASP.NET UNLEASHED', 4, 'ASP', datetime.date(2002, 4, 2), 'P', 378)
+(1002, 'ORACLE10G COMP. REF.', 3, 'ORA', datetime.date(2005, 5, 1), 'P', 489)
+(1003, 'MASTERING EJB', 1, 'JEE', datetime.date(2005, 2, 3), 'P', 404)
+(1004, 'JAVA COMP. REF', 3, 'JAVA', datetime.date(2005, 4, 3), 'P', 424)
+(1005, 'PRO. VB.NET', 2, 'VB', datetime.date(2005, 6, 15), 'P', 383)
+MySQL connection is closed
+PS C:\Users\oscar\OneDrive\CSUSB\Fall 2022\CSE5720\Project2> 
